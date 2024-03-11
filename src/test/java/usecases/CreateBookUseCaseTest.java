@@ -25,5 +25,7 @@ class CreateBookUseCaseTest {
         Assertions.assertNotNull(result);
         Assertions.assertTrue(result.getId() > 0);
         Assertions.assertEquals(result.getId(), book.getId());
+
+        // Assertions.assertThrows(NullPointerException.class, () -> useCase.execute(book));
     }
 }
